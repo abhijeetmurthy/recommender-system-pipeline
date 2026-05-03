@@ -8,8 +8,13 @@ Enterprise-style scaffold for a recommendation pipeline repository.
 - `scripts/`: operational entrypoints.
 - `docs/`: architecture and implementation notes.
 
+## Package Baseline
+- `numpy`, `pandas`, `scikit-learn` for model/data pipeline.
+- `fastapi`, `uvicorn` for serving.
+
 ## Quickstart
 ```bash
+python3 -m pip install -r requirements.txt
 ./scripts/bootstrap.sh
 ./scripts/run_pipeline.sh
 ```
