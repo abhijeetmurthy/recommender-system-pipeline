@@ -1,19 +1,19 @@
 # Recommender System Pipeline
 
-Generic placeholder repository for a recommendation pipeline.
+Enterprise-style scaffold for a recommendation pipeline repository.
 
-## Planned Pipeline Stages
+## Structure
+- `src/`: planned code location for ingestion/training/inference modules.
+- `configs/`: runtime config templates.
+- `scripts/`: operational entrypoints.
+- `docs/`: architecture and implementation notes.
 
-1. Ingest: load user-item interaction data.
-2. Prepare: clean, split, and feature-engineer interactions.
-3. Train: fit recommendation models.
-4. Evaluate: compute ranking/relevance metrics.
-5. Serve: expose recommendation endpoints.
+## Quickstart
+```bash
+./scripts/bootstrap.sh
+./scripts/run_pipeline.sh
+```
 
-## Current Status
-
-This repository is currently scaffold-only (no committed code yet).
-
-## Example Dataset Direction
-
-Use current movie-rating datasets as examples (for example, MovieLens) when implementing the ingest stage.
+## Status
+- Scaffold-only repository ready for implementation.
+- Add executable modules in `src/` and extend `scripts/run_pipeline.sh`.
